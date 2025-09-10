@@ -34,5 +34,6 @@ Route::middleware(['auth:sanctum', 'restrict:administrador'])->group(function ()
     Route::apiResources([
         'roles' => App\Http\Controllers\Api\RoleController::class,
         'users' => App\Http\Controllers\Api\UserController::class,
+        'faculties' => App\Http\Controllers\Api\FacultyController::class,
     ]);
 });
