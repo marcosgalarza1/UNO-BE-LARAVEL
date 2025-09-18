@@ -38,5 +38,6 @@ Route::middleware(['auth:sanctum', 'restrict:administrador'])->group(function ()
         'degree-programs' => App\Http\Controllers\Api\DegreeProgramController::class,
         'subjects' => App\Http\Controllers\Api\SubjectController::class,
         'students' => App\Http\Controllers\Api\StudentController::class,
+        'enrollments' => App\Http\Controllers\Api\EnrollmentController::class,
     ]);
 });
